@@ -1,0 +1,30 @@
+
+/* Variables */
+:root {
+  --main-color: #FFFFFF;
+  --secondary-color: #12372A;
+  --main-yallow-color: #F1C30C;
+  --Accent3: #12372A;
+  --hover-color: #e6b800;
+  --font-main: 'Inter', sans-serif;
+  --font-title: 'Urbanist', sans-serif;
+}
+
+/* ============================= */
+/* Global Rules */
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+html, body {
+  line-height: 160%;
+  font-weight: 400;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  padding-top: 140px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700;
+}

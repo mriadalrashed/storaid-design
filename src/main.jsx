@@ -1,5 +1,6 @@
-import './css/normalize.css'
-import './css/style.css'
+import './style/normalize.css';
+import './style/variables.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
