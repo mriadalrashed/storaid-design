@@ -21,10 +21,30 @@ html, body {
   font-weight: 400;
   font-size: 16px;
   scroll-behavior: smooth;
-  padding-top: 140px;
+  height: 100%;
+}
+
+main {
+  flex: 1;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Urbanist', sans-serif;
   font-weight: 700;
 }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 48rem) { .container { width: 46.875rem; } }
+@media (min-width: 62rem) { .container { width: 60.625rem; } }
+@media (min-width: 75rem) { .container { width: 82.5rem; } }
+@media (min-width: 87.5rem) { .container { width: 87.5rem; } }
