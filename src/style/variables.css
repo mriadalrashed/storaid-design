@@ -3,8 +3,11 @@
 :root {
   --main-color: #FFFFFF;
   --secondary-color: #12372A;
-  --main-yallow-color: #F1C30C;
-  --Accent3: #12372A;
+  --main-yallow-color: #e7bd16;
+  --Accent3: #12372ACC;
+  --color2: #ECECEC;
+  --color3: #FAF8EC;
+  --color4: #F1FFEA;
   --hover-color: #e6b800;
   --font-main: 'Inter', sans-serif;
   --font-title: 'Urbanist', sans-serif;
@@ -40,9 +43,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   width: 100%;
-  margin: 0 auto;
-  padding: 0 1rem;
+  max-width: 1400px;  
+  margin: 0 auto;     
+  padding: 0 5vw;     
+  box-sizing: border-box;
 }
+
+
 
 @media (min-width: 48rem) { .container { width: 46.875rem; } }
 @media (min-width: 62rem) { .container { width: 60.625rem; } }

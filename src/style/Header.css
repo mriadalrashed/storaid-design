@@ -1,7 +1,7 @@
 @import "./variables.css";
 
 /* Header */
-header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -9,6 +9,8 @@ header {
   height: 4.75rem;
   z-index: 1000;
 }
+
+
 
 /* Top Bar */
 .top-bar {
