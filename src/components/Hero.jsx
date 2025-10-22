@@ -20,7 +20,6 @@ export default function Hero() {
             <button>Discover More</button>
           </div>
         </div>
-
         <div className="hero-image">
           <img src="/images/delivery-man.png" alt="Delivery Service" />
         </div>
