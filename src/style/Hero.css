@@ -68,6 +68,12 @@
   color: var(--secondary-color);
 }
 
+.hero-text-button .button button:hover {
+  background-color: var(--hover-color);
+}
+
+/* Responsive */
+
 @media (max-width: 1200px) {
   .container {
     grid-template-columns: 1fr;
@@ -92,6 +98,7 @@
 
   .hero-text h1 {
     text-align: center;
+    font-size: 3rem;
   }
 
   .hero-text p:last-child {
@@ -126,12 +133,15 @@
 
 @media (max-width: 576px) {
   .hero-text h1 {
-    font-size: 2.5rem;
-    text-align: center;
+    font-size: 2.3rem;
   }
 
   .hero-text p:last-child {
-    text-align: center;
+    font-size: 0.9rem;
+  }
+  .hero-text-button .button button {
+    width: auto;
+    padding: 0.8rem 1.5rem;
   }
 }
 
