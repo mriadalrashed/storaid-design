@@ -1,0 +1,57 @@
+@import "./variables.css";
+
+.brands-section {
+  background-color: var(--color3);
+  padding: 2rem 0;
+}
+
+.brands-container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5vw;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 2.563rem; 
+  flex-wrap: nowrap; 
+  box-sizing: border-box;
+}
+
+.brands-section img {
+  height: 67px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.brands-section img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 1400px) {
+  .brands-section .img1 {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .brands-section .img2 {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .brands-section .img3 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .brands-section .img4 {
+    display: none;
+  }
+}
