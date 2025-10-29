@@ -6,6 +6,7 @@ import BrandsSection from "../components/BrandsSection";
 import ServiceCard from "../components/ServiceCard";
 import ChooseUs from "../components/ChooseUs";
 import PricingCard from "../components/PricingCard";
+import CallToAction from "../components/CallToAction";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
     <ServiceCard/>
     <ChooseUs/>
     <PricingCard/>
+     <CallToAction /> 
     </>
   );
 }
