@@ -5,6 +5,7 @@ import AboutUs from "../components/AboutUs";
 import BrandsSection from "../components/BrandsSection";
 import ServiceCard from "../components/ServiceCard";
 import ChooseUs from "../components/ChooseUs";
+import PricingCard from "../components/PricingCard";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
     <BrandsSection/>
     <ServiceCard/>
     <ChooseUs/>
+    <PricingCard/>
     </>
   );
 }
