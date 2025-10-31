@@ -186,6 +186,11 @@
 }
 
 @media (max-width: 768px) {
+  .about-section .container {
+  display: grid;
+  grid-template-columns: 1fr ;
+  
+}
   .about-vision-mission {
     grid-template-columns: 1fr;
   }

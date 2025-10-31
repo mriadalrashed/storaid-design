@@ -89,7 +89,7 @@
 }
 
 /* CTA Button */
-.cta button {
+.cta  {
   width: 8.063rem;
   height: 2.813rem;
   background-color: var(--main-yallow-color);
@@ -97,9 +97,14 @@
   border-radius: 4px;
   align-items: center;
   cursor: pointer;
+  display: inline-flex;                
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;    
+  color: var(--secondary-color);
 }
 
-.cta button:hover {
+.cta:hover {
   background-color: var(--hover-color);
 }
 
@@ -141,7 +146,7 @@
     padding: 0 0.5rem;
   }
 
-  .cta button {
+  .cta  {
     width: 100vw;
     border-radius: 0;
   }

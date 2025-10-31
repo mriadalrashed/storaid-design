@@ -1,0 +1,124 @@
+@import "./variables.css";
+
+.testimonials {
+  width: 100%;
+  padding: 95px 0;
+  background-image: url("./images/Bg-testimonials.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.testimonials .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+}
+
+.testimonials__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.testimonials__subtitle {
+  font-size: 1.563rem;
+  font-weight: 1000;
+  color: var(--main-yallow-color);
+  margin: 0;
+}
+
+.testimonials__title {
+  font-size: 2.75rem;
+  line-height: 3.25rem;
+  font-weight: 800;
+  color: var( --main-color);
+  margin: 0;
+  padding-top: 1rem;
+}
+
+.testimonials__description {
+  font-size: 1rem;
+  color: var( --main-color);
+}
+
+.testimonials__title__description {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+
+.no-data {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 1.1rem;
+  margin: 40px 0;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.testimonials__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.testimonial__card {
+  background: var(--main-color);
+  color: var(--secondary-color);
+  width: 340px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.testimonial__card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial__rating {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.testimonial__comment {
+  font-style: italic;
+  margin-bottom: 20px;
+  min-height: 120px; 
+}
+
+.testimonial__footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimonial__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.testimonial__name {
+  font-size: 1.25rem;
+  color: var(--secondary-color);
+  font-weight: 800;
+  margin: 0;
+  font-family: var(--font-title);
+}
+
+.testimonial__company {
+  font-size: 0.9rem;
+  font-family: var( --font-main);
+  color: var(--secondary-color);
+  margin: 0;
+}
+

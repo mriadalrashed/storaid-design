@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../style/AboutUs.css";
+import "../style/AboutUsSec.css";
 
-export default function AboutUs() {
+export default function AboutUsSec() {
   return (
  <section className="about-section">
       <div className="container">
