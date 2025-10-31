@@ -31,10 +31,11 @@ export default function Header() {
           <Link to="/services">Services</Link>
           <Link to="/contact">Contact Us</Link>
         </nav>
-
-        <div className="cta">
-          <button>Book Now</button>
-        </div>
+           <div>
+             <Link to="/booking" className="cta">
+               Book Now
+               </Link>
+           </div>
       </div>
     </header>
   );
