@@ -20,3 +20,10 @@ export const getBlogs = () => apiClient(ENDPOINTS.blogs);
 // Booking Form
 
 // Newsletter Subscribe
+export const sendSubscription = (data) =>
+  apiClient(ENDPOINTS.subscribe, {
+    method: "POST",
+    body: JSON.stringify({
+      email: data.email,
+    }),
+  });
