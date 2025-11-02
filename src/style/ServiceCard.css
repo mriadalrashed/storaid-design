@@ -14,6 +14,9 @@
   row-gap: 1rem;
 }
 
+.services__header {
+  padding-bottom: 20px;
+}
 .services__subtitle {
   font-size: 1.563rem;
   font-weight: 1000;
@@ -22,7 +25,7 @@
 }
 
 .services__title {
-  font-size: 2.75rem;
+  font-size: 3.25rem;
   line-height: 3.25rem;
   font-weight: 800;
   color: var(--secondary-color);
@@ -38,7 +41,6 @@
 .services__title__description {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
 }
 
 .services__content {
@@ -91,6 +93,11 @@
     gap: 1.5rem;
   }
 
+.services__title {
+  font-size: 2.2rem;
+}
+  
+
   .services__content {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -108,6 +115,8 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
+  
   .services__content {
     grid-template-columns: 1fr 1fr;
     gap: 24px;

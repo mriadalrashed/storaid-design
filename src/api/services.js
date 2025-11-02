@@ -8,6 +8,7 @@ import { ENDPOINTS } from "./endpoints";
 export const getTestimonials = () => apiClient(ENDPOINTS.testimonials);
 
 // Blogs
+export const getBlogs = () => apiClient(ENDPOINTS.blogs);
 
 // FAQs
 
