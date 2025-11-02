@@ -6,4 +6,5 @@ export const ENDPOINTS = {
   faqs: `${BASE_URL}/faqs`,
   contact: `${BASE_URL}/contact`,
   booking: `${BASE_URL}/booking`,
+  subscribe: `${BASE_URL}/subscribe`
 };
