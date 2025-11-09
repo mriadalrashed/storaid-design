@@ -11,7 +11,7 @@ export const getTestimonials = () => apiClient(ENDPOINTS.testimonials);
 export const getBlogs = () => apiClient(ENDPOINTS.blogs);
 
 // FAQs
-
+export const getFaqs = () => apiClient(ENDPOINTS.faqs);
 
 /* ========== POST Requests ========== */
 

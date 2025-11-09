@@ -60,10 +60,6 @@ export default function Newsletter() {
             </button>
           </div>
         </form>
-
-        {message && (
-          <p className={isSuccess ? "success-msg" : "error-msg"}>{message}</p>
-        )}
       </div>
     </section>
   );
