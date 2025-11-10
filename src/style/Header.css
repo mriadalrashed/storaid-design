@@ -40,6 +40,13 @@
   align-items: center;
 }
 
+.top-bar .right a {
+  text-decoration: none; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .top-bar .right i {
   font-size: 18px;
   background-color: var(--main-yallow-color);
