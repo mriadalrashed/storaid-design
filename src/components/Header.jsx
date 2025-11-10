@@ -15,10 +15,41 @@ export default function Header() {
         </div>
 
         <div className="right">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
           <i className="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a
+          href="https://www.x.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X (Twitter)"
+        >
           <i className="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
           <i className="fa-brands fa-instagram"></i>
+        </a>
+
+        <a
+          href="https://www.youtube.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="YouTube"
+        >
           <i className="fa-brands fa-youtube"></i>
+        </a>
         </div>
       </div>
 
