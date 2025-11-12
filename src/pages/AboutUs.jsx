@@ -4,7 +4,6 @@ import AboutUsSection from "../components/AboutUsSec";
 import BrandsSection from "../components/BrandsSection";
 import Testimonials from "../components/Testimonials";
 import ChooseUs from "../components/ChooseUs";
-import Newsletter from "../components/Newsletter";
 
 export default function AboutUs() {
   return (
@@ -16,8 +15,7 @@ export default function AboutUs() {
       <AboutUsSection />
       <BrandsSection />
       <Testimonials />
-      <ChooseUs />
-      <Newsletter />
+      <ChooseUs bgColor="#FFFFFF" />
     </>
   );
 }

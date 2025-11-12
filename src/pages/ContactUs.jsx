@@ -3,7 +3,6 @@ import HeroPage from "../components/HeroPage";
 import GetInTouch from "../components/GetInTouch";
 import FindUsOn from "../components/FindUsOn";
 import FAQAccordion from "../components/FAQAccordion";
-import Newsletter from "../components/Newsletter";
 
 export default function ContactUs() {
   return (
@@ -15,7 +14,6 @@ export default function ContactUs() {
       <GetInTouch/>
       <FindUsOn/>
       <FAQAccordion/>
-      <Newsletter/>
     </>
         );
 }

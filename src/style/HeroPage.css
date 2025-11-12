@@ -44,11 +44,22 @@
 }
 
 @media (max-width: 576px) {
+
+  .hero-page .container {
+    padding: 0 
+}
+
+.hero-page {
+padding: 120px 0;
+height: 380px;
+}
  .hero-page-title  {
     font-size: 35px;
+     line-height: 1;
   }
 
   .hero-page-subtitle {
     font-size: 16px;
+    margin-top: 0;
      }
 }

@@ -4,7 +4,6 @@ import ServiceCard from "../components/ServiceCard";
 import Testimonials from "../components/Testimonials";
 import FAQAccordion from "../components/FAQAccordion";
 import CallToAction from "../components/CallToAction";
-import Newsletter from "../components/Newsletter";
 
 export default function Services() {
   return (
@@ -17,7 +16,6 @@ export default function Services() {
       <Testimonials />
       <FAQAccordion/>
       <CallToAction />
-      <Newsletter />
     </>
   );
 }

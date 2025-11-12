@@ -29,6 +29,16 @@ export const sendContact = (data) =>
   });
 
 // Booking Form
+export const sendBooking = (data) =>
+  apiClient(ENDPOINTS.booking, {
+    method: "POST",
+    body: JSON.stringify({
+      name: data.name,
+      email: data.email,
+      selectedUnit: data.selectedUnit,
+      purpose: data.purpose,
+    }),
+  });
 
 // Newsletter Subscribe
 export const sendSubscription = (data) =>

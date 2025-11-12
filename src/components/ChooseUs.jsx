@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../style/ChooseUs.css";
 
-export default function ChooseUs() {
+export default function ChooseUs({ bgColor = "var(--main-color)" }) {
   return (
-    <section className="chooseus">
-      <div className="container">
+    <section className="chooseus" style={{ backgroundColor: bgColor }}>
+      <div className="container" >
         <div className="chooseus__header">
           <h4 className="chooseus__subtitle">Why Choose Us</h4>
           <div className="chooseus__title__description">
