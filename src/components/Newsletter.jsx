@@ -1,35 +1,72 @@
 import React, { useState } from "react";
 import { sendSubscription } from "../api/services";
 import "../style/Newsletter.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Newsletter() {
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [isSuccess, setIsSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      setIsSuccess(false);
-      setMessage("⚠️ Please enter a valid email address.");
+
+    if (!email.trim() || !emailRegex.test(email)) {
+      setHasError(true);
+      toast.warn("⚠️ Please enter a valid email address.", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "colored",
+      });
       return;
     }
+
+    setHasError(false);
+    setIsSubmitting(true);
 
     try {
       const res = await sendSubscription({ email });
       if (res.success) {
-        setIsSuccess(true);
-        setMessage(res.message || "✅ Subscription successful!");
+        toast.success(res.message || "✅ Subscription successful!", {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          theme: "colored",
+        });
         setEmail("");
       } else {
-        setIsSuccess(false);
-        setMessage("❌ Subscription failed. Please try again.");
+        toast.error("❌ Subscription failed. Please try again.", {
+          position: "top-right",
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          theme: "colored",
+        });
       }
     } catch (err) {
-      setIsSuccess(false);
-      setMessage("❌ Something went wrong. Please try again later.");
+      toast.error("❌ Something went wrong. Please try again later.", {
+        position: "top-right",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "colored",
+      });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -48,19 +85,24 @@ export default function Newsletter() {
             <input
               type="email"
               placeholder="Enter your email *"
-              className="form-email"
+              className={`form-input ${hasError ? "input-error" : ""}`}
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
+              onChange={(e) => {
+                setEmail(e.target.value);
+                setHasError(false);
+              }}
             />
           </div>
+
           <div className="Submit-box">
-            <button type="submit" className="Submit-button">
-              Submit
+            <button type="submit" className="Submit-button" disabled={isSubmitting}>
+              {isSubmitting ? "Submitting..." : "Submit"}
             </button>
           </div>
         </form>
       </div>
+
+      <ToastContainer theme="colored" />
     </section>
   );
 }

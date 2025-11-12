@@ -59,8 +59,11 @@ export default function AboutUsSec() {
           </div>
 
           <div className="about-actions">
-            <button className="about-btn">Discover More</button>
-
+               <div className="div-button">
+               <Link to="/booking" className="about-btn">
+                Discover More
+                </Link>
+                </div>
             <div className="about-contact">
               <i className="fa-solid fa-phone"></i>
               <div>

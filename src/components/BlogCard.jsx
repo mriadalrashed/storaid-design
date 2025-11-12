@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../style/BlogCard.css";
 import { getBlogs } from "../api/services";
-import { Link } from "react-router-dom";
 
 export default function Blogs() {
   const [blogs, setBlogs] = useState([]);
@@ -15,7 +14,6 @@ export default function Blogs() {
         console.error("Error fetching blogs:", err);
       }
     };
-
     fetchBlogs();
   }, []);
 
@@ -49,9 +47,15 @@ function Header() {
 }
 
 function Cards({ blogs }) {
+  const [expanded, setExpanded] = useState(null);
+
   if (blogs.length === 0) {
     return <p className="no-data">No blogs available yet.</p>;
   }
+
+  const toggleExpand = (id) => {
+    setExpanded(expanded === id ? null : id);
+  };
 
   return (
     <div className="blogs__cards">
@@ -66,7 +70,7 @@ function Cards({ blogs }) {
           </div>
           <div className="blog__content">
             <p className="blog__date">
-              <img src="/images/calendar.png" alt="calendar" className="calendarlogo"/>{" "}
+              <img src="/images/calendar.png" alt="calendar" className="calendarlogo" />{" "}
               {new Date(item.created).toLocaleDateString("en-US", {
                 month: "long",
                 day: "numeric",
@@ -75,11 +79,16 @@ function Cards({ blogs }) {
             </p>
             <h4 className="blog__title">{item.title}</h4>
             <p className="blog__description">
-              {item.description.substring(0, 120)}...
+              {expanded === item.id
+                ? item.description
+                : `${item.description.substring(0, 200)}...`}
             </p>
-            <Link to={`/blogs/${item.id}`} className="read-more">
-              Read more →
-            </Link>
+            <button
+              className="read-more"
+              onClick={() => toggleExpand(item.id)}
+            >
+              {expanded === item.id ? "Read less →" : "Read more →"}
+            </button>
           </div>
         </div>
       ))}

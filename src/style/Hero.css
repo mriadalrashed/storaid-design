@@ -27,7 +27,7 @@
   transform: translateY(2rem);
 }
 
-.hero-text-button {
+.hero-text-button  {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -57,7 +57,8 @@
   color: var(--main-color);
 }
 
-.hero-text-button .button button {
+.hero-text-button .button  {
+  display: inline-flex;  
   width: 9.313rem;
   height: 2.625rem;
   background-color: var(--main-yallow-color);
@@ -66,10 +67,13 @@
   align-items: center;
   cursor: pointer;
   color: var(--secondary-color);
+  text-decoration: none;  
+  justify-content: center;
 }
 
-.hero-text-button .button button:hover {
-  background-color: var(--hover-color);
+.hero-text-button .button:hover {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
 }
 
 /* Responsive */
@@ -105,7 +109,7 @@
     text-align: center;
   }
 
-  .hero-text-button .button {
+  .hero-text-button .div-button {
     display: flex;
     justify-content: center;
   }
@@ -121,10 +125,6 @@
     text-align: center;
   }
 
-  .hero-text-button .button {
-    display: flex;
-    justify-content: center;
-  }
 
   .hero-text p:last-child {
     text-align: center;
@@ -138,10 +138,6 @@
 
   .hero-text p:last-child {
     font-size: 0.9rem;
-  }
-  .hero-text-button .button button {
-    width: auto;
-    padding: 0.8rem 1.5rem;
   }
 }
 

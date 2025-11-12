@@ -146,7 +146,11 @@
     text-align: center;
   }
 
-  .findus-image img {
+  .findus-box img {
+    display: none;
+  }
+
+    .findus-image img {
     display: none;
   }
 
@@ -163,6 +167,9 @@
     gap: 10px;
   }
 
+    .findus-social h5 {
+    margin-bottom: 0;
+  }
   .findus-social .divider {
     width: 100px;
   }

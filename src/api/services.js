@@ -16,6 +16,17 @@ export const getFaqs = () => apiClient(ENDPOINTS.faqs);
 /* ========== POST Requests ========== */
 
 // Contact Form
+export const sendContact = (data) =>
+  apiClient(ENDPOINTS.contact, {
+    method: "POST",
+    body: JSON.stringify({
+      name: data.name,
+      email: data.email,
+      phoneNumber: data.phoneNumber,
+      subject: data.subject,
+      comment: data.comment,
+    }),
+  });
 
 // Booking Form
 

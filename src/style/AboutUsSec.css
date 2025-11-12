@@ -113,8 +113,11 @@
   align-items: center;
   padding-top: 30px;
 }
-
+.div-button {
+  margin-right: 90px;
+}
 .about-btn {
+  display: inline-flex;  
   width: 9.978rem;
   height: 2.813rem;
   background-color: var(--main-yallow-color);
@@ -124,10 +127,13 @@
   cursor: pointer;
   color: var(--secondary-color);
   grid-column: span 4;
+  text-decoration: none;  
+  justify-content: center;
 }
 
 .about-btn:hover {
-  background-color: var(--hover-color);
+  background-color: var(--secondary-color);
+  color: var(--main-color);
 }
 
 .about-contact {
@@ -175,7 +181,6 @@
 
 @media (max-width: 992px) {
   .about-actions {
-    flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
   }
@@ -246,3 +251,25 @@
   }
 }
 
+@media (max-width: 532px) {
+
+      .about-contact {
+       gap: 1rem;
+    }
+
+    .about-header h3 {
+        width: 70%;
+    }
+
+        .about-header p {
+       width: 70%;
+    }
+    .about-box {
+        width: 70%;
+    }
+
+    .div-button {
+    margin: 0;
+}
+
+}

@@ -91,12 +91,18 @@ grid-template-columns: 1fr 1fr;
   margin-bottom: 0.5rem;
 }
 
-.calendarlogo  {
+.blog__date .calendarlogo {
+  content: url("/images/calendar.png");
   width: 16px;
   height: 16px;
   vertical-align: middle;
   margin-right: 6px;
   margin-bottom: 5px;
+}
+
+.blog__card:hover .calendarlogo {
+  content: url("/images/calendar1.png");
+  filter: brightness(1.2);
 }
 
 .blog__title {
@@ -123,15 +129,39 @@ grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 4px;
   transition: color 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-.read-more:hover {
-  color: var(--hover-color);
+.blog__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  background-color: var(--color5); 
+  color: var(--secondary-color); 
+}
+
+.blog__card:hover .blog__image {
+  transform: scale(1.03);
+}
+
+.blog__card:hover .blog__title {
+  color: var(--secondary-color);
+}
+
+.blog__card:hover .blog__description {
+  color: var(--secondary-color);
+}
+
+.blog__card:hover .read-more {
+  color: var(--main-yallow-color);
 }
 
 @media (max-width: 992px) {
   .blog__card {
     width: calc(50% - 1rem);
+    margin-bottom: 15px;
+    
   }
 
     .blogs__title__description {

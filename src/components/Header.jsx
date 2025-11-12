@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import "../style/Header.css";
 
@@ -54,18 +54,28 @@ export default function Header() {
       </div>
 
       <div className="main-header">
+         <Link to="/">
         <img src={logo} alt="Logo" className="logo" />
+      </Link>
 
-        <nav className="nav-menu">
-          <Link to="/">Home</Link>
-          <Link to="/about">About Us</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/contact">Contact Us</Link>
-        </nav>
+          <nav className="nav-menu">
+        <NavLink to="/" end>
+          Home
+        </NavLink>
+        <NavLink to="/about">
+          About Us
+        </NavLink>
+        <NavLink to="/services">
+          Services
+        </NavLink>
+        <NavLink to="/contact">
+          Contact Us
+        </NavLink>
+      </nav>
            <div>
              <Link to="/booking" className="cta">
                Book Now
-               </Link>
+             </Link>
            </div>
       </div>
     </header>

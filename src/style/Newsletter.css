@@ -60,7 +60,18 @@
 }
 
 .Submit-button:hover {
-  background-color: var(--hover-color);
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+
+.input-error {
+  border-color: #e74c3c !important; 
+  box-shadow: 0 0 3px rgba(231, 76, 60, 0.5);
+  transition: border 0.3s ease;
+}
+
+.input-success {
+  border-color: var(--secondary-color) !important;
 }
 
 @media (min-width: 1283px) and (max-width: 1399px) {
