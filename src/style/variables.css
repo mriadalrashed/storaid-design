@@ -12,6 +12,8 @@
   --hover-color: #e6b800;
   --font-main: 'Inter', sans-serif;
   --font-title: 'Urbanist', sans-serif;
+  --toastify-color-success: #12372ACC;
+  --toastify-color-progress-success: #12372ACC;
 }
 
 /* ============================= */

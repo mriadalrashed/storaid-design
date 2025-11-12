@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../style/PricingCard.css";
 
 export default function PricingCard() {
@@ -29,7 +28,6 @@ export default function PricingCard() {
         "Duis gravida enim porta",
         "Etiam eget libero non ligula",
       ],
-      highlighted: true,
     },
     {
       title: "Large Unit",
@@ -73,10 +71,8 @@ export default function PricingCard() {
 
         <div className="cards">
           {plans.map((plan, index) => (
-            <div
-              key={index}
-              className={`card ${plan.highlighted ? "highlighted" : ""}`}>
-              <h5 className={`card__title ${plan.highlighted ? "highlighted" : ""}`}>{plan.title}</h5>
+            <div key={index} className="card">
+              <h5 className="card__title">{plan.title}</h5>
               <p className="card__price">
                 <span className="currency">$</span>
                 {plan.price}

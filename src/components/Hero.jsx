@@ -17,8 +17,10 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="button">
-            <button>Discover More</button>
+          <div className="div-button">
+              <Link to="/booking" className="button">
+              Discover More
+              </Link>
           </div>
         </div>
         <div className="hero-image">

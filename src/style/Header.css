@@ -92,7 +92,17 @@
 }
 
 .nav-menu a:hover {
+  background-color: var(--Accent3);
   color: var(--main-yallow-color);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.nav-menu .active {
+  background-color: var(--Accent3);
+  color: var(--main-yallow-color);
+  padding: 5px;
+  border-radius: 5px;
 }
 
 /* CTA Button */
@@ -112,7 +122,8 @@
 }
 
 .cta:hover {
-  background-color: var(--hover-color);
+  background-color: var(--secondary-color);
+  color: var(--main-color);
 }
 
 
