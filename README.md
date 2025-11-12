@@ -1,16 +1,108 @@
-# React + Vite
+# Storaid Design: Modern React & Vite Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+**Storaid Design** is a modern, responsive website built with **React** and **Vite**. It is a front-end implementation based on a professional **Figma design**, focusing on a clean, component-based architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project is designed to be a comprehensive showcase, featuring:
+*   **Reusable Components:** A modular structure for easy maintenance and scalability.
+*   **API Integration:** Placeholder structure for integrating with back-end APIs for dynamic content.
+*   **Key Sections:** Dedicated sections for blogs, frequently asked questions (FAQs), and customer testimonials.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **React + Vite:** Utilizes the speed and efficiency of Vite for a fast development experience.
+*   **Component-Based Architecture:** Organized into reusable components for maximum efficiency.
+*   **Design-First Approach:** Directly implements a professional design from Figma.
+*   **Content Sections:** Includes dedicated components for:
+    *   `GetInTouch`: A contact or inquiry form component.
+    *   `Header`: Navigation and branding.
+    *   Placeholder for Blog, FAQ, and Testimonials integration.
+*   **Asset Management:** Images and static assets are stored in the `public/images` directory.
 
-## Expanding the ESLint configuration
+## Technology Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The project is built using the following core technologies:
+
+| Technology | Description |
+| :--- | :--- |
+| **React** | A JavaScript library for building user interfaces. |
+| **Vite** | A next-generation frontend tooling that provides a fast development server. |
+| **JavaScript** | The primary programming language for the application logic. |
+| **CSS** | Used for styling and layout, ensuring a pixel-perfect match to the design. |
+
+## Project Structure
+
+The main directories and files are organized as follows:
+
+```
+storaid-design/
+├── public/
+│   └── images/             # Static assets like logos, icons, and background images
+├── src/                    # Source code directory
+│   ├── components/         # Reusable React components (e.g., Header, GetInTouch)
+│   ├── App.jsx             # Main application component
+│   └── main.jsx            # Entry point for the React application
+├── .gitignore              # Specifies intentionally untracked files to ignore
+├── index.html              # The main HTML file
+├── package.json            # Project dependencies and scripts
+└── vite.config.js          # Vite configuration file
+```
+
+## Getting Started
+
+Follow these instructions to set up the project locally.
+
+### Prerequisites
+
+You must have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) (or [pnpm](https://pnpm.io/)) installed on your system.
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/mriadalrashed/storaid-design.git
+    cd storaid-design
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    pnpm install
+    ```
+
+### Running the Project
+
+To start the development server with hot-reloading:
+
+```bash
+npm run dev
+# or
+pnpm run dev
+```
+
+The application will typically be available at `http://localhost:5173/`.
+
+### Building for Production
+
+To build the application for deployment:
+
+```bash
+npm run build
+# or
+pnpm run build
+```
+
+The production-ready files will be generated in the `dist` directory.
+
+## Contributing
+
+This project is currently maintained by the original author. If you are interested in contributing, please fork the repository and submit a pull request with your suggested changes.
+
+## License
+
+(This project is for educational/demonstration purposes. Please ensure you have proper licenses for any fonts, icons, or images used in production.)
+
+---
+*Developed by [RiadAlrashed](https://github.com/mriadalrashed)*
