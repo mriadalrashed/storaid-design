@@ -7,7 +7,6 @@ import ChooseUs from "../components/ChooseUs";
 import PricingCard from "../components/PricingCard";
 import Testimonials from "../components/Testimonials";
 import CallToAction from "../components/CallToAction";
-import Newsletter from "../components/Newsletter";
 import BlogCard from "../components/BlogCard";
 
 export default function Home() {
@@ -18,11 +17,10 @@ export default function Home() {
       <BrandsSection />
       <ServiceCard />
       <Testimonials />
-      <ChooseUs />
+      <ChooseUs  bgColor="#FAF8EC" />
       <PricingCard />
       <CallToAction />
       <BlogCard />
-      <Newsletter />
     </>
   );
 }

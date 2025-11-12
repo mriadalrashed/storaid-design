@@ -96,3 +96,10 @@
   display: grid;
   grid-template-columns: 1fr ;
 } }
+
+@media (max-width: 576px) {
+
+  .faq-section .container {
+    padding: 5rem 1rem;
+}
+}

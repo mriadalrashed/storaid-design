@@ -84,6 +84,14 @@
 }
 
 @media (max-width: 576px) {
+  .footer .container {
+    width: 100%;
+}
+
+  .footer-content {
+    grid-column: 1 / -2;
+  
+}
   .footer {
     padding: 2rem 0;
   }
