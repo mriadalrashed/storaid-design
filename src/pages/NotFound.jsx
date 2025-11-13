@@ -1,3 +1,10 @@
+import React from "react";
+import PageNotFound from "../components/PageNotFound";
+
 export default function NotFound() {
-  return <h1></h1>;
+  return (
+    <>
+      <PageNotFound />
+    </>
+      );
 }
