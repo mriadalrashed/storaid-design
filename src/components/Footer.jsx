@@ -9,13 +9,13 @@ export default function Footer() {
         <div className="footer-content">
           <p>© 2025 StorAid. All rights reserved.</p>
           <div className="footer-links">
-            <a href="#">
+            <a href="/NotFound">
               <span className="icon-circle">
                 <i className="fa-solid fa-chevron-right"></i>
               </span>
               Terms & Conditions
             </a>
-            <a href="#">
+            <a href="/NotFound">
               <span className="icon-circle">
                 <i className="fa-solid fa-chevron-right"></i>
               </span>
