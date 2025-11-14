@@ -147,15 +147,20 @@ export default function BookingUnit() {
               <label>
                 Choose Unit <span className="required">*</span>
               </label>
-              <input
-                type="text"
+              <select
                 name="selectedUnit"
-                placeholder="Choose Unit"
                 value={formData.selectedUnit}
                 onChange={handleChange}
                 onBlur={handleBlur}
                 className={inputClass("selectedUnit")}
-              />
+              >
+                <option value="">Choose Unit</option>
+                <option value="Small Unit">Small Unit</option>
+                <option value="Medium Unit">Medium Unit</option>
+                <option value="Large Unit">Large Unit</option>
+                <option value="Executive Unit">Executive Unit</option>
+              </select>
+
               {(touched.selectedUnit || submitted) && errors.selectedUnit && (
                 <p className="error-message">{errors.selectedUnit}</p>
               )}
